@@ -12,7 +12,7 @@ namespace Bilbixen_API.EF
         {
         }
 
-        public BilbixenContext(DbContextOptions<BilbixenContext> options)
+        public BilbixenContext(DbContextOptions<BilbixsenContext> options)
             : base(options)
         {
         }
