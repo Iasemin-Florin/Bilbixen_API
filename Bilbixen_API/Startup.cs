@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Bilbixen_API.EF;
+using Microsoft.EntityFrameworkCore;
 
 namespace Bilbixen_API
 {
@@ -23,7 +25,10 @@ namespace Bilbixen_API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddRazorPages();
+            services.AddControllers();
+            services.AddDbContext<BilbixenContext>(options => 
+            options.UseSqlServer(Configuration.GetConnectionString("Bilbixen")));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,6 +46,7 @@ namespace Bilbixen_API
             }
 
             app.UseHttpsRedirection();
+
             app.UseStaticFiles();
 
             app.UseRouting();
@@ -49,7 +55,7 @@ namespace Bilbixen_API
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapRazorPages();
+                endpoints.MapControllers();
             });
         }
     }

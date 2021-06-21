@@ -12,16 +12,16 @@ namespace Bilbixen_API.EF
         {
         }
 
-        public BilbixenContext(DbContextOptions<BilbixsenContext> options)
+        public BilbixenContext(DbContextOptions<BilbixenContext> options)
             : base(options)
         {
         }
 
-        public virtual DbSet<Bruger> Brugers { get; set; }
-        public virtual DbSet<Ordre> Ordres { get; set; }
-        public virtual DbSet<OrdreLinje> OrdreLinjes { get; set; }
-        public virtual DbSet<PostNr> PostNrs { get; set; }
-        public virtual DbSet<Produkter> Produkters { get; set; }
+        public virtual DbSet<Bruger> Brugere { get; set; }
+        public virtual DbSet<Ordre> Ordrere { get; set; }
+        public virtual DbSet<OrdreLinje> OrdreLinjer { get; set; }
+        public virtual DbSet<PostNr> PostNre { get; set; }
+        public virtual DbSet<Produkter> Produkter { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
