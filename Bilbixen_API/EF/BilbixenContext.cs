@@ -93,7 +93,9 @@ namespace Bilbixen_API.EF
                 entity.Property(e => e.OrdreDato)
                     .HasColumnType("datetime")
                     .HasColumnName("ordreDato");
-
+                entity.Property(e => e.LejeDato)
+                    .HasColumnType("datetime")
+                    .HasColumnName("lejeDato");
                 entity.Property(e => e.TotalPris).HasColumnName("totalPris");
             });
 
@@ -107,7 +109,7 @@ namespace Bilbixen_API.EF
 
                 entity.Property(e => e.OrdreId).HasColumnName("ordreID");
 
-                entity.Property(e => e.Price).HasColumnName("price");
+                entity.Property(e => e.Pris).HasColumnName("pris");
 
                 entity.Property(e => e.ProduktId).HasColumnName("produktID");
 

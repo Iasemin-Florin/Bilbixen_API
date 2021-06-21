@@ -15,6 +15,7 @@ namespace Bilbixen_API.EF
         public int OrdreId { get; set; }
         public int BrugerId { get; set; }
         public DateTime OrdreDato { get; set; }
+        public DateTime LejeDato { get; set; }
         public double TotalPris { get; set; }
 
         public virtual ICollection<OrdreLinje> OrdreLinjes { get; set; }

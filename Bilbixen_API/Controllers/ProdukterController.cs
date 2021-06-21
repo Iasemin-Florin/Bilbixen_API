@@ -75,11 +75,11 @@ namespace Bilbixen_API.Properties.Controllers
         {
             if (string.IsNullOrEmpty(model.ProduktNavn))
             {
-                return BadRequest("need to insert Førstenavn");
+                return BadRequest("need to insert Prdukt navn");
             }
             else if (string.IsNullOrEmpty(model.pris.ToString()))
             {
-                return BadRequest("need to insert Efternavn");
+                return BadRequest("need to insert Pris");
             }
 
             var produkter = _db.Produkter.Find(model.produktID);

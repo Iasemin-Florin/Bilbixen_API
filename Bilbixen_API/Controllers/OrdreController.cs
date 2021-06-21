@@ -54,7 +54,12 @@ namespace Bilbixen_API.Controllers
 
             else if (string.IsNullOrEmpty(model.OrdreDato.ToString()))
             {
-                return BadRequest("No Date Specified");
+                return BadRequest("No Dato Specified");
+            }
+
+            else if (string.IsNullOrEmpty(model.LejeDato.ToString()))
+            {
+                return BadRequest("No Leje Dato Specified");
             }
 
             else if (string.IsNullOrEmpty(model.TotalPris.ToString()))
@@ -65,6 +70,7 @@ namespace Bilbixen_API.Controllers
             Ordre ordre = new Ordre();
             ordre.BrugerId = model.BrugerID;
             ordre.OrdreDato = model.OrdreDato;
+            ordre.LejeDato = model.LejeDato;
             ordre.TotalPris = model.TotalPris;
 
 

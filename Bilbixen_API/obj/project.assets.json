@@ -5403,19 +5403,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Iasemin-Florin\\.nuget\\packages\\": {}
+    "C:\\Users\\queue\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\source\\repos\\Bilbixen_API\\Bilbixen_API\\Bilbixen_API.csproj",
+      "projectUniqueName": "C:\\Users\\queue\\source\\repos\\Bilbixen_API\\Bilbixen_API\\Bilbixen_API.csproj",
       "projectName": "Bilbixen_API",
-      "projectPath": "D:\\source\\repos\\Bilbixen_API\\Bilbixen_API\\Bilbixen_API.csproj",
-      "packagesPath": "C:\\Users\\Iasemin-Florin\\.nuget\\packages\\",
-      "outputPath": "D:\\source\\repos\\Bilbixen_API\\Bilbixen_API\\obj\\",
+      "projectPath": "C:\\Users\\queue\\source\\repos\\Bilbixen_API\\Bilbixen_API\\Bilbixen_API.csproj",
+      "packagesPath": "C:\\Users\\queue\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\queue\\source\\repos\\Bilbixen_API\\Bilbixen_API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Iasemin-Florin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\queue\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5474,7 +5474,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

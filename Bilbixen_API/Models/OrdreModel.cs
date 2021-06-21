@@ -17,6 +17,9 @@ namespace Bilbixen_API.Models
         [JsonProperty("ordreDato")]
         public DateTime OrdreDato { get; set; }
 
+        [JsonProperty("lejeDato")]
+        public DateTime LejeDato { get; set; }
+
         [JsonProperty("totalPris")]
         public double TotalPris { get; set; }
     }
